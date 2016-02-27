@@ -15,6 +15,8 @@ public class CalculatorDouble {
 	}
 	
 	public double div(double n1, double n2) {
+        if( n2 == 0 )
+            throw new ArithmeticException("Division by 0!");
 		return n1 / n2;
 	}
 	

@@ -21,16 +21,12 @@ public class LiczbaRzymska {
 			 
 			String result = "";
 			 
-			if ((liczbarzymska > 3999) || (liczbarzymska <= 0)) {
-				return result;
-			}
-			
 			while ((liczbarzymska > 0) && (i < ROMAN_N)) {
 				if(liczbarzymska >= arabic[i]) {
 					liczbarzymska -= arabic[i];
 					result += roman[i];
 				}
-				else if ((i%2 == 0) && (i<ROMAN_N-2) && // 9xx condition
+				else if ((i%2 == 0) && (i<ROMAN_N-2) &&
 						 (liczbarzymska >= arabic[i] - arabic[i+2]) &&
 						 (arabic[i+2] != arabic[i] - arabic[i+2])) {
 					liczbarzymska -= arabic[i] - arabic[i+2];
@@ -39,7 +35,7 @@ public class LiczbaRzymska {
 					i++;
 				}
 				else if ((i%2 == 1) &&
-						 (i<ROMAN_N-1) && //4xx condition
+						 (i<ROMAN_N-1) && 
 						 (liczbarzymska >= arabic[i] - arabic[i+1]) &&
 						 (arabic[i+1] != arabic[i] - arabic[i+1])) {
 					liczbarzymska -= arabic[i] - arabic[i+1];

@@ -11,8 +11,9 @@ import org.junit.rules.ExpectedException;
 import com.example.app.CalculatorDouble;
 
 public class CalculatorDoubleTest {
-	@Rule
-	public ExpectedException thrown = ExpectedException.none(); 
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
 	
 	private CalculatorDouble calc = new CalculatorDouble();
 	
@@ -44,7 +45,8 @@ public class CalculatorDoubleTest {
 	
 	@Test
 	public void divZeroCheck() {
-		thrown.expect(ArithmeticException.class);
-		calc.div(10.4522, 0.0);
-	}
+        thrown.expect(ArithmeticException.class);
+        thrown.expectMessage("Division by 0!");
+        assertEquals(0, calc.div(10.4522, 0), 0.1);
+    }
 }

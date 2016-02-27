@@ -46,4 +46,9 @@ public class CalculatorTest {
 		thrown.expect(ArithmeticException.class);
 		calc.div(5, 0);
 	}
+
+    @Test
+    public void divTestFailOnException() {
+        calc.div(5, 0);
+    }
 }

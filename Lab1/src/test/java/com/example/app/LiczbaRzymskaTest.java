@@ -25,6 +25,8 @@ public class LiczbaRzymskaTest {
 	@Test
 	public void exceptionCheck() {
 		thrown.expect(IllegalArgumentException.class);
+        thrown.expectMessage("Zła liczba!");
 		liczuj.toString();
+        liczduza.toString();
 	}
 }
