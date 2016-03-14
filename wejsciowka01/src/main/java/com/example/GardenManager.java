@@ -5,6 +5,10 @@ import java.util.*;
 public class GardenManager {
 	private List<Garden> m_gardens = new ArrayList<Garden>();
 	
+    public GardenManager(IGardens garden) {
+        this.m_gardens = new ArrayList<Garden>(Arrays.asList(garden.getGarden()));
+    }
+
 	public void addGarden(Garden garden) {
 		m_gardens.add(garden);
 	}
