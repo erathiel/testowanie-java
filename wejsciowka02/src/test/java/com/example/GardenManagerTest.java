@@ -16,6 +16,8 @@ public class GardenManagerTest {
     private GardenManager manager;
     private IGardens mock;
 
+    private List<Garden> garden;
+
     @Before
     public void setUp() {
         mock = createMock(IGardens.class);
@@ -30,6 +32,24 @@ public class GardenManagerTest {
         replay(mock);
         manager.addGarden(garden1);
         assertEquals("Roza", manager.getGarden(1).getName());
+        verify(mock);
+    }
+
+    @Test
+    public void findGardenByFlowerCheck() {
+        Garden garden1 = new Garden("Fiolek", 3);
+        expect(mock.findGardenByFlower("Fiolek")).andReturn(garden1).atLeastOnce();
+        replay(mock);
+        assertEquals(garden1, manager.findGardenByFlower("Fiolek"));
+        verify(mock);
+    }
+    
+    @Test
+    public void findGardenByNumberCheck() {
+        Garden garden2 = new Garden("Storczyk", 5);
+        expect(mock.findGardenByNumber(5)).andReturn(garden).atLeastOnce();
+        replay(mock);
+        assertEquals(garden, manager.findGardenByNumber(5));
         verify(mock);
     }
 }

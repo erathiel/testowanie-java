@@ -20,4 +20,12 @@ public class GardenManager {
 	public Garden getGarden(int at) {
 		return m_gardens.get(at);
 	}
-}
+
+    public Garden findGardenByFlower(String flower) {
+        return m_gardens.findGardenByFlower(flower);
+    }
+
+    public List<Garden> findGardenByNumber(int number) {
+        return m_gardens.findGardenByNumber(number);
+    }
+}           
