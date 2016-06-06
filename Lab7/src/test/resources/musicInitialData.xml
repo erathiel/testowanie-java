@@ -1,0 +1,11 @@
+<?mxl version="1.0" encoding="UTF-8"?>
+<dataset>
+	<ARTIST FIRSTNAME="Iron" LASTNAME="Maiden" ID="0"/>
+	<ARTIST FIRSTNAME="Metal" LASTNAME="Bus" ID="1"/>
+	<ARTIST FIRSTNAME="Metal" LASTNAME="Lica" ID="2"/>
+	<ARTIST FIRSTNAME="Evane" LASTNAME="Scence" ID="3"/>
+	<ARTIST FIRSTNAME="Brian" LASTNAME="Matthews" ID="4"/>
+	<MUSIC NAME="Absolution_Calling" AUTHORID="1" ALBUM="Trust_Fall" GENRE="Rock" RD="2015" ID="1"/>
+	<MUSIC NAME="Absolution_Calling" AUTHORID="2" ALBUM="Master_Of_Puppets" GENRE="Metal" RD="1980" ID="2"/>
+	<MUSIC NAME="Calling" AUTHORID="3" ALBUM="Evanescence" GENRE="Rock" RD="2013" ID="3"/>
+</dataset>

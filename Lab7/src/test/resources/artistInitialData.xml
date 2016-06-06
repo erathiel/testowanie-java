@@ -1,0 +1,8 @@
+<?mxl version="1.0" encoding="UTF-8"?>
+<dataset>
+	<ARTIST FIRSTNAME="Iron" LASTNAME="Maiden" ID="1"/>
+	<ARTIST FIRSTNAME="Metal" LASTNAME="Bus" ID="2"/>
+	<ARTIST FIRSTNAME="Metal" LASTNAME="Lica" ID="3"/>
+	<ARTIST FIRSTNAME="Evane" LASTNAME="Scence" ID="4"/>
+	<ARTIST FIRSTNAME="Brian" LASTNAME="Matthews" ID="5"/>
+</dataset>
